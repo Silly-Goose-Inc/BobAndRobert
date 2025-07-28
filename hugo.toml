@@ -1,0 +1,13 @@
+baseURL = 'https://BobAndRobert.org/'
+languageCode = 'en-us'
+title = 'Bob-&-Robert'
+theme = "hyde"
+
+[params]
+  description = "The Home Of The Cremean Estate"
+
+[Menus]
+  main = [
+      {Name = "Flickr", URL = "https://www.flickr.com/photos/robertcremean/albums"},
+      {Name = "Email", URL = "mailto:VincentFisherArmstrong@gmail.com"}
+  ]
