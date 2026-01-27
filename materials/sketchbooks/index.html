@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sketchbooks | Materials | Bob & Robert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sketchbooks index for the Bob & Robert estate with scalable structure for many volumes."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--wall:#f3efe9;--paper:#fffdf9;--ink:#1b1816;--muted:#6f675f;--accent:#b48a5a;--frame:#e3ddd5;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.08);--radius:16px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui;background:var(--wall);color:var(--ink);line-height:1.7}
+    .nav{position:sticky;top:0;z-index:30;background:rgba(243,239,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav-inner{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:baseline;gap:12px}
+    .brand h1{font-family:'Playfair Display',serif;font-size:28px;line-height:1}
+    .brand .sub{color:var(--muted);font-size:.9rem;letter-spacing:.02em}
+    .nav ul{list-style:none;display:flex;gap:22px}
+    .nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+    .nav a:hover{color:var(--ink)}
+    header{max-width:var(--max);margin:60px auto 24px;padding:0 24px}
+    h1{font-family:'Playfair Display',serif;font-size:44px}
+    .lead{color:var(--muted);max-width:65ch;margin-top:10px}
+    .list{max-width:var(--max);margin:18px auto 80px;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .item{background:var(--paper);padding:18px;border-radius:14px;box-shadow:var(--shadow);text-decoration:none;color:inherit}
+    .item h3{font-size:18px;margin-bottom:6px}
+    .item .sm{color:var(--muted)}
+    footer{margin:0;padding:24px;background:#efeae3;border-top:1px solid rgba(0,0,0,.08);text-align:center;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Home">
+        <h1>Bob & Robert</h1>
+        <span class="sub">The Virtual Estate</span>
+      </a>
+      <ul>
+        <li><a href="/available/">Available</a></li>
+        <li><a href="/collection/">Collection</a></li>
+        <li><a href="/materials/">Materials</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Sketchbooks</h1>
+    <p class="lead">An expandable index for many volumes. Each sketchbook page can include a thumbnail grid and a simple page viewer.</p>
+  </header>
+
+  <section class="list" aria-label="Sketchbook volumes">
+    <a class="item" href="#"><h3>Sketchbook A (1969–1971)</h3><div class="sm">Graphite, ink, paper — 120pp</div></a>
+    <a class="item" href="#"><h3>Sketchbook B (1972–1974)</h3><div class="sm">Graphite, wash — 98pp</div></a>
+    <a class="item" href="#"><h3>Sketchbook C (1975)</h3><div class="sm">Mixed media — 64pp</div></a>
+  </section>
+
+  <footer>© 2026 · Bob & Robert — The Virtual Estate</footer>
+</body>
+</html>

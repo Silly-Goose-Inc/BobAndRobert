@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Collection | Bob & Robert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Bob & Robert collection: sculpture, works on paper, assemblage, painting."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--wall:#f3efe9;--paper:#fffdf9;--ink:#1b1816;--muted:#6f675f;--accent:#b48a5a;--frame:#e3ddd5;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.08);--shadow-lg:0 30px 80px rgba(0,0,0,.14);--radius:16px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui;background:var(--wall);color:var(--ink);line-height:1.7}
+    .nav{position:sticky;top:0;z-index:30;background:rgba(243,239,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav-inner{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:baseline;gap:12px}
+    .brand h1{font-family:'Playfair Display',serif;font-size:28px;line-height:1}
+    .brand .sub{color:var(--muted);font-size:.9rem;letter-spacing:.02em}
+    .nav ul{list-style:none;display:flex;gap:22px}
+    .nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+    .nav a:hover{color:var(--ink)}
+    header{max-width:var(--max);margin:60px auto 24px;padding:0 24px}
+    h1{font-family:'Playfair Display',serif;font-size:44px}
+    .lead{color:var(--muted);max-width:65ch;margin-top:10px}
+    .filters{max-width:var(--max);margin:18px auto;padding:0 24px;display:flex;gap:8px;flex-wrap:wrap}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--frame);background:#f7f3ee;color:#544f49;font-size:.85rem}
+    .grid{max-width:var(--max);margin:10px auto 80px;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+    .tile{background:var(--paper);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:block;color:inherit;text-decoration:none}
+    .media{aspect-ratio:3/4;background:#f7f3ee;display:grid;place-items:center}
+    .media svg{width:58%}
+    .info{padding:12px 14px;border-top:1px solid var(--frame)}
+    .info h3{font-size:17px}
+    .info .sm{color:var(--muted);font-size:.92rem;margin-top:4px}
+    .tile:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);transition:transform .35s ease, box-shadow .35s ease}
+    footer{margin:0;padding:24px;background:#efeae3;border-top:1px solid rgba(0,0,0,.08);text-align:center;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Home">
+        <h1>Bob & Robert</h1>
+        <span class="sub">The Virtual Estate</span>
+      </a>
+      <ul>
+        <li><a href="/available/">Available</a></li>
+        <li><a href="/collection/">Collection</a></li>
+        <li><a href="/materials/">Materials</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Collection</h1>
+    <p class="lead">A browsable survey of the estate: sculpture, works on paper, assemblage, and painting. Filter and expand as needed; individual entries can be promoted to Available when relevant.</p>
+  </header>
+
+  <div class="filters" aria-label="Categories">
+    <span class="chip">Sculpture</span>
+    <span class="chip">Works on Paper</span>
+    <span class="chip">Assemblage</span>
+    <span class="chip">Painting</span>
+  </div>
+
+  <section class="grid" aria-label="Collection grid">
+    <a class="tile" href="#">
+      <div class="media" aria-hidden="true"><svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="260" height="360" rx="14" fill="#f0ebe4" stroke="#d9cfc4"/></svg></div>
+      <div class="info"><h3>Untitled Relief (1979)</h3><div class="sm">Cast paper, graphite · 24 × 18 in</div></div>
+    </a>
+    <a class="tile" href="#">
+      <div class="media" aria-hidden="true"><svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="260" height="360" rx="14" fill="#efe7de" stroke="#d9cfc4"/></svg></div>
+      <div class="info"><h3>Seated Form (1968)</h3><div class="sm">Plaster with pigment · 28 × 18 × 16 in</div></div>
+    </a>
+    <a class="tile" href="#">
+      <div class="media" aria-hidden="true"><svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="260" height="360" rx="14" fill="#f3eee7" stroke="#d9cfc4"/></svg></div>
+      <div class="info"><h3>Ledger, Red (2002)</h3><div class="sm">Mixed media on panel · 20 × 16 in</div></div>
+    </a>
+    <a class="tile" href="#">
+      <div class="media" aria-hidden="true"><svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="260" height="360" rx="14" fill="#efe9e1" stroke="#d9cfc4"/></svg></div>
+      <div class="info"><h3>Standing Figure (1975)</h3><div class="sm">Wood and gesso · 34 × 12 × 10 in</div></div>
+    </a>
+  </section>
+
+  <footer>© 2026 · Bob & Robert — The Virtual Estate</footer>
+</body>
+</html>
