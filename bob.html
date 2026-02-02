@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===============================
+       1. META & TITLE
+       =============================== -->
+  <meta charset="utf-8">
+  <title>Robert de Laverne | Bob & Robert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All about Robert de Laverne, chronicler and documentarian of Bob Cremean’s life and work." />
+
+  <!-- ===============================
+       2. FONTS
+       =============================== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <!-- ===============================
+       3. EXTERNAL CSS
+       =============================== -->
+  <link rel="stylesheet" href="style.css">
+<style>
+/* MAIN CONTENT: add spacing from page edges */
+main {
+  max-width: var(--max);
+  margin: 64px auto 100px;  /* centers content */
+  padding: 0 32px;          /* spacing from page sides */
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-wrap: wrap;          /* stacks on very small screens */
+  gap: 24px;                /* spacing between text & image */
+  align-items: flex-start;
+}
+
+.hero-content {
+  flex: 1 1 0;              /* fill remaining space */
+  min-width: 300px;         /* prevent squishing */
+}
+
+.hero-image {
+  flex: 0 0 300px;          /* fixed width */
+  height: 300px;            /* fixed square */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* EXHIBITIONS & COLLECTIONS BAR */
+.pane-bar {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;          /* stacks on mobile */
+}
+
+.pane-card {
+  flex: 1 1 0;              /* equal width columns */
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+/* EDUCATION / HONORS / TEACHING: force horizontal layout */
+.doors {
+  display: flex;
+  flex-wrap: nowrap;        /* keep all three side by side */
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.doors .door {
+  flex: 1 1 0;              /* equal width for each door */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  min-width: 0;             /* prevent overflow */
+}
+
+/* FULL-WIDTH BUTTONS (Other Artists / Navigation) */
+.doors.navigation {
+  flex-direction: column;   /* stacked full-width buttons */
+}
+
+.doors.navigation .door {
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;       /* stack hero image & text */
+  }
+  .pane-bar {
+    flex-direction: column;       /* stack Exhibitions & Collections */
+  }
+  .doors {
+    flex-direction: column;       /* stack Education/Honors/Teaching */
+  }
+}
+
+/* Bottom navigation buttons: horizontal full-width */
+.doors.navigation {
+  display: flex;
+  gap: 24px; /* space between buttons */
+}
+
+.doors.navigation .door {
+  flex: 1 1 0;  /* each door takes equal width */
+  text-align: center;
+  padding: 24px;
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Home">
+        <h1>Bob & Robert</h1>
+        <span class="sub">The Virtual Estate</span>
+      </a>
+      <ul>
+        <li><a href="/available/available.html">Available</a></li>
+        <li><a href="/collection/collection.html">Collection</a></li>
+        <li><a href="/materials/materials.html">Materials</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero / Intro with image -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Robert Cremean</h2>
+    <p class="lead">
+      Painter, sculptor, and printmaker Robert Cremean was born in Toledo, Ohio in 1932.  
+      His work occupies a distinctive position in postwar American art, marked by rigorous formal inquiry, symbolic density, and sustained engagement with mythic and moral structures.
+    </p>
+    <p class="lead">
+      Educated at Alfred University and the Cranbrook Academy of Art, Cremean received both his B.F.A. and M.F.A.  
+      Recognized through a Fulbright Scholarship to Rome and other fellowships, Cremean pursued themes of constraint, transformation, and human consequence with intellectual precision and material restraint.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="/materials/photos/hotbobpic.jpg" alt="Young Robert Cremean" />
+  </div>
+</section>
+
+
+    <!-- Exhibitions & Collections side-by-side -->
+    <section class="pane-bar">
+      <div class="pane-card">
+        <h3>Selected Exhibitions</h3>
+        <ul>
+          <li>Toledo Museum of Art · Toledo, Ohio</li>
+          <li>Esther Robles Gallery · Los Angeles, California</li>
+          <li>Santa Barbara Museum of Art · Santa Barbara, California</li>
+          <li>National Gallery of Art · Melbourne, Australia</li>
+          <li>Phoenix Art Museum · Phoenix, Arizona</li>
+          <li>Crocker Art Museum · Sacramento, California</li>
+        </ul>
+      </div>
+
+      <div class="pane-card">
+        <h3>Public Collections</h3>
+        <ul>
+          <li>Los Angeles County Museum of Art</li>
+          <li>Metropolitan Museum of Art · New York</li>
+          <li>National Gallery of Victoria · Australia</li>
+          <li>Museum of Contemporary Art San Diego</li>
+          <li>Fine Arts Museums of San Francisco</li>
+          <li>Honolulu Academy of Art</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION / HONORS / TEACHING -->
+    <section class="doors" aria-label="Biography Details">
+      <a class="door">
+        <h3>Education</h3>
+        <span>
+          1950–1952 · Alfred University<br>
+          1954 · Cranbrook Academy of Art, B.F.A.<br>
+          1956 · Cranbrook Academy of Art, M.F.A.
+        </span>
+      </a>
+      <a class="door">
+        <h3>Honors & Fellowships</h3>
+        <span>
+          1954 · Fulbright Scholarship, Rome, Italy<br>
+          1957 · Huntington Hartford Foundation Fellowship<br>
+          1966–1967 · Tamarind Workshop Fellowship
+        </span>
+      </a>
+      <a class="door">
+        <h3>Teaching</h3>
+        <span>
+          Detroit Institute of Art, Detroit, Michigan<br>
+          University of California, Los Angeles<br>
+          La Jolla Art Center, La Jolla, California
+        </span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 · Bob & Robert — The Virtual Estate · Catalog V-001
+  </footer>
+
+</body>
+</html>
