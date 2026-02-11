@@ -26,7 +26,82 @@
     .door{background:var(--paper);padding:28px;border-radius:14px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow)}
     .door h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:6px}
     .door span{color:var(--muted)}
+
+.door-wide{
+  grid-column:1 / -1;
+  background:var(--paper);
+  padding:16px 28px;
+  border-radius:14px;
+  text-decoration:none;
+  color:var(--ink);
+  box-shadow:var(--shadow);
+
+  /* change the layout */
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2px;
+}
+
+.door-wide h3{
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  margin-bottom:2px;
+}
+
+.door-wide span{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.links {
+  max-width:var(--max);
+  margin:60px auto 80px;
+  padding:0 24px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.door-link {
+  background:#f9f7f2;          /* slightly lighter than main doors */
+  padding:22px;
+  border-radius:12px;
+  text-decoration:none;
+  color:var(--ink);
+  box-shadow:0 8px 20px rgba(0,0,0,.06); /* lighter shadow */
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.door-link:hover {
+  transform:translateY(-3px);
+  box-shadow:0 14px 40px rgba(0,0,0,.08);
+}
+
+.door-link h3{
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  margin-bottom:6px;
+}
+
+.door-link span{
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+
     footer{margin:0;padding:24px;background:#efeae3;border-top:1px solid rgba(0,0,0,.08);text-align:center;color:var(--muted);font-size:.9rem}
+  
+  .section-divider {
+  width: 100%;
+  height: 1px;             /* thin line */
+  background: rgba(0,0,0,0.08); /* soft muted line */
+  margin: 60px 0;          /* spacing above and below */
+}
+
+
   </style>
 </head>
 <body>
@@ -53,9 +128,33 @@
   <section class="doors">
     <a class="door" href="/materials/sketchbooks/"><h3>Sketchbooks</h3><span>Indices and page viewers</span></a>
     <a class="door" href="/materials/writings/"><h3>Writings</h3><span>By Cremean and DeLavergne</span></a>
-    <a class="door" href="#"><h3>Press</h3><span>Reviews, catalogs (coming)</span></a>
-    <a class="door" href="#"><h3>Installation Views</h3><span>Exhibitions and studio (coming)</span></a>
+    <a class="door" href="#"><h3>Press (coming)</h3><span>Reviews, and, Catalogs</span></a>
+    <a class="door" href="#"><h3>Installation Views (coming)</h3><span>Exhibitions and Studio</span></a>
+    <a class="door-wide" href="#"><h3>Communications (Coming)</h3><span>Archived Leters, and Messages</span></a>
   </section>
+
+<div class="section-divider"></div> <!-- ← divider added here -->
+
+
+  <section class="doors links">
+  <a class="door-link" href="https://www.flickr.com/" target="_blank">
+    <h3>Flickr</h3>
+    <span>Studio and archival images</span>
+  </a>
+  <a class="door-link" href="https://en.wikipedia.org/wiki/Robert_Cremean" target="_blank">
+    <h3>Wikipedia</h3>
+    <span>Artist overview and biography</span>
+  </a>
+  <a class="door-link" href="https://www.si.edu/archives" target="_blank">
+    <h3>Smithsonian Archives</h3>
+    <span>Official research and archival references</span>
+  </a>
+  <a class="door-link" href="https://www.artstor.org/" target="_blank">
+    <h3>Artstor</h3>
+    <span>Curated visual collections</span>
+  </a>
+</section>
+
 
   <footer>© 2026 · Bob & Robert — The Virtual Estate</footer>
 </body>

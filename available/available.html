@@ -5,8 +5,10 @@
   <title>Available for Acquisition | Bob & Robert</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Available works from the Bob & Robert estate. Sales-ready documentation and inquiry options."/>
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
   <style>
     :root{--wall:#f3efe9;--paper:#fffdf9;--ink:#1b1816;--muted:#6f675f;--accent:#b48a5a;--frame:#e3ddd5;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.08);--shadow-lg:0 30px 80px rgba(0,0,0,.14);--radius:16px}
     *{box-sizing:border-box;margin:0;padding:0}
@@ -37,9 +39,55 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:10px;font-weight:600;font-size:.9rem;text-decoration:none}
     .btn.primary{background:var(--ink);color:#fff}
     .btn.ghost{background:transparent;border:1px solid var(--frame);color:var(--ink)}
+
     footer{margin:0;padding:24px;background:#efeae3;border-top:1px solid rgba(0,0,0,.08);text-align:center;color:var(--muted);font-size:.9rem}
+
+    .secondary {
+      max-width: var(--max);
+      margin: -40px auto 80px;
+      padding: 0 24px;
+    }
+
+.tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--paper); /* same as other cards */
+  border: 1px solid var(--frame);
+  border-radius: 14px;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: var(--shadow); /* match the card shadow */
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+
+    .tile-body h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .tile-body p {
+      margin-top: 6px;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .tile-cta {
+      font-weight: 600;
+      color: var(--accent);
+      white-space: nowrap;
+    }
   </style>
 </head>
+
 <body>
   <nav class="nav" aria-label="Primary">
     <div class="nav-inner">
@@ -58,90 +106,170 @@
 
   <header>
     <h1>Available for Acquisition</h1>
-    <p class="lead">Curated selection prioritized for placement. Each entry links to a documentation page with images, details, and provenance notes. Dossiers and additional images are available on request.</p>
+    <p class="lead">
+      Curated selection prioritized for placement. Each entry links to a documentation page with images, details, and provenance notes. Dossiers and additional images are available on request.
+    </p>
   </header>
 
   <section class="grid" aria-label="Available works">
 
+<!-- Narcissus -->
     <article class="card">
       <a href="/available/Narcissus.html" class="media" aria-label="Narcissus in Flagrante (2007)">
-        <svg viewBox="0 0 400 300" xmlns=""><rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/></svg>
+        <img src="/works/narcissus/Narcissus.jpg" alt="arcissus in Flagrante" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+          <rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/>
+        </svg>
       </a>
       <div class="body">
         <h3>Narcissus in Flagrante (2007)</h3>
-        <div class="meta">Plaster and pigment | 71H 25W 23D</div>
-        <p class="desc">An intimate study of balance and negative space. Surface wash preserves tool marks while softening contours.</p>
-        <div class="tags"><span class="tag">Sculpture</span><span class="tag">Studio Reserve</span></div>
+        <div class="meta">Plaster, Mache, & Marble | 71H 25W 23D</div>
+        <p class="desc">
+        <b>Narcissus in Flagrante</b> Presents a poised, self-facing form whose meticulously worked plaster surfaces hold a subtle tension between weight and balance. Each curve and angle seems carefully considered, turning myth into a quiet study of reflection and introspection, where stillness and implied motion coexist.
+
+        </p>
+        <div class="tags">
+          <span class="tag">Partial</span>
+          <span class="tag">Standalone</span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Untitled%20Study%20(c.%201972)">Inquire</a>
+          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Narcissus%20in%20Flagrante%20(2007)">Inquire</a>
           <a class="btn ghost" href="/available/Narcissus.html">Details</a>
         </div>
       </div>
     </article>
-    
+
+
+<!-- Palimpsest -->
     <article class="card">
       <a href="/available/palimpsest.html" class="media" aria-label="Palimpsest (2005)">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="360" height="260" rx="12" fill="#efe7de" stroke="#d9cfc4"/></svg>
+       <img src="/works/palimpsest/palimpsest.jpg" alt="Palimpsest" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+          <rect x="20" y="20" width="360" height="260" rx="12" fill="#efe7de" stroke="#d9cfc4"/>
+        </svg>
       </a>
       <div class="body">
         <h3>Palimpsest (2005)</h3>
-        <div class="meta"> Marble Wood & Mache | 79H 22W 22D</div>
-        <p class="desc">A palimpsest form where scaffold and skin negotiate memory. Erased marks and stitched planes suggest a body assembled from residue rather than image.<p>
-        <div class="tags"><span class="tag">Stand-Alone</span><span class="tag">SE: Dorothy-Laughing</span></div>
+        <div class="meta">Marble, Wood & Mache | 79H 22W 22D</div>
+        <p class="desc">
+        <b>A Palimpsest</b> form where scaffold and skin negotiate memory. Erased marks and stitched planes suggest a body assembled from residue rather than image.
+        </p>
+        <div class="tags">
+          <span class="tag">Stand-Alone</span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:?subject=Inquiry%3A%20Figure%20Fragment%20No.%205%20(1981)">Inquire</a>
+          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Palimpsest%20(2005)">Inquire</a>
           <a class="btn ghost" href="/available/palimpsest.html">Details</a>
         </div>
       </div>
     </article>
 
-        <article class="card">
-      <a href="/available/frenchshelfx.html" class="media" aria-label="French Shelf XxX (xxxx)">
-        <svg viewBox="0 0 400 300" xmlns=""><rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/></svg>
+
+<!-- French Shelf #3 - Self-Portrait In Three Generations -->
+    <article class="card">
+      <a href="/available/frenchshelf3.html" class="media" aria-label="French Shelf #3 - Self-Portrait In Three Generations (2021)">
+        <img src="/works/frenchshelves/FS3/FS3Small.jpg" alt="French Shelf #3" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+          <rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/>
+        </svg>
       </a>
       <div class="body">
-        <h3>French Shelf XxX</h3>
-        <div class="meta">Plaster and pigment | 71H 25W 23D</div>
-        <p class="desc">An intimate study of balance and negative space. Surface wash preserves tool marks while softening contours.</p>
-        <div class="tags"><span class="tag">Sculpture</span><span class="tag">Studio Reserve</span></div>
+        <h3>French Shelf #3 - Self-Portrait In Three Generations</h3>
+        <div class="meta">Marble, Walnut | 61H 16D 66W</div>
+        <p class="desc">
+          The nine heads of <b>French Shelf #3</b> represent portraits by Robert Cremean of his immediate family of which he was (at the time of production) the only surviving member. 
+        </p>
+        <div class="tags">
+          <span class="tag">Stand-Alone</span>
+          <span class="tag">French-Shelf</span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Untitled%20Study%20(c.%201972)">Inquire</a>
-          <a class="btn ghost" href="/works/Narcissus.jpg">Details</a>
+          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20French%20Shelf%20#3 - Self-Portrait In Three Generations">Inquire</a>
+          <a class="btn ghost" href="/available/frenchshelf3.html">Details</a>
         </div>
       </div>
     </article>
 
-        <article class="card">
-      <a href="/available/frenchshelfz.html" class="media" aria-label="French Shelf XxX (zzzz)">
-        <svg viewBox="0 0 400 300" xmlns=""><rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/></svg>
+
+<!-- French Shelf #4 - Male To Female To Male -->
+    <article class="card">
+      <a href="/available/frenchshelf4.html" class="media" aria-label="French Shelf #4 - Male To Female To Male">
+        <img src="/works/frenchshelves/FS4/FS4Circle.jpg" alt="French Shelf #4" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+          <rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/>
+        </svg>
       </a>
       <div class="body">
-        <h3>French Shelf ZzZ</h3>
-        <div class="meta">Plaster and pigment | 71H 25W 23D</div>
-        <p class="desc">An intimate study of balance and negative space. Surface wash preserves tool marks while softening contours.</p>
-        <div class="tags"><span class="tag">Sculpture</span><span class="tag">Studio Reserve</span></div>
+        <h3>French Shelf #4 - Male To Female To Male</h3>
+        <div class="meta">Plaster, Marble, Walnut | | 60H 98.5W 6D</div>
+        <p class="desc">
+        <b>French Shelf #4</b> frames a shifting, transitional form that seems to pass through states rather than settle in one. Layered plaster planes stack and tilt like held breath, suggesting movement between identities while remaining grounded in a precise, architectural logic.
+        </p>
+        <div class="tags">
+          <span class="tag">French-Shelf</span>
+          <span class="tag">Stand-Alone</span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Untitled%20Study%20(c.%201972)">Inquire</a>
-          <a class="btn ghost" href="/works/Narcissus.jpg">Details</a>
+          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20French%20Shelf%20#4 - Male To Female To Male">Inquire</a>
+          <a class="btn ghost" href="/available/frenchshelf4.html">Details</a>
         </div>
       </div>
     </article>
 
-        <article class="card">
+
+<!-- Duet -->
+    <article class="card">
       <a href="/available/duet.html" class="media" aria-label="Studies For A Double Portrait (2006)">
-        <svg viewBox="0 0 400 300" xmlns=""><rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/></svg>
+        <img src="/works/duet/duetmainpic.jpg" alt="Studies For A Double Portrait" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+          <rect x="20" y="20" width="360" height="260" rx="12" fill="#f0ebe4" stroke="#d9cfc4"/>
+        </svg>
       </a>
       <div class="body">
         <h3>Studies For A Double Portrait</h3>
-        <div class="meta">Plaster and pigment | 71H 25W 23D</div>
-        <p class="desc">An intimate study of balance and negative space. Surface wash preserves tool marks while softening contours.</p>
-        <div class="tags"><span class="tag">Sculpture</span><span class="tag">Studio Reserve</span></div>
+        <div class="meta">Plaster, pigment, Wooden Paneling | 71H 25W 23D</div>
+        <p class="desc"> <b>Studies For A Double Portrait</b> renders two presences in quiet tension, using layered plaster and pigment to suggest relationship through form rather than literal figure.        </p>
+        <div class="tags">
+          <span class="tag">Sculpture</span>
+          <span class="tag">Partial</span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Untitled%20Study%20(c.%201972)">Inquire</a>
-          <a class="btn ghost" href="/works/Narcissus.jpg">Details</a>
+          <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Studies%20For%20A%20Double%20Portrait">Inquire</a>
+          <a class="btn ghost" href="/available/duet.html">Details</a>
         </div>
       </div>
     </article>
+
+
+<!-- Maquette4Time -->
+<article class="card">
+  <a href="/available/maquette.html" class="media" aria-label="Maquette For The End Of Time">
+    <img src="/works/maquette/M4T-figurefront.jpg" alt="Maquette For The End Of Time" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />
+  </a>
+  <div class="body">
+    <h3>Maquette For The End Of Time</h3>
+    <div class="meta">Walnut, Plaster, Marble | 65.5H X 60Diam.</div>
+    <p class="desc">
+      <b>The Maquette For The End of Time</b> engages directly with the Hiroshima bombing as subject and symbol.
+    </p>
+    <div class="tags">
+      <span class="tag">Sculptures</span>
+      <span class="tag">Full Installation</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="mailto:TheCremeanEstate@gmail.com?subject=Inquiry%3A%20Maquette%20For%20The%20End%20Of%20Time">Inquire</a>
+      <a class="btn ghost" href="/available/maquette.html">Details</a>
+    </div>
+  </div>
+</article>
+
+
+  </section>
+
+<!-- Assorted Goods -->
+  <section class="secondary" aria-label="Additional material">
+    <a href="/available/assorted.html" class="tile">
+      <div class="tile-body">
+        <h3>Assorted Goods</h3>
+        <p>Sketchbooks, small works, and related material available.</p>
+      </div>
+      <span class="tile-cta">View inventory →</span>
+    </a>
   </section>
 
   <footer>© 2026 · Bob & Robert — The Virtual Estate</footer>
